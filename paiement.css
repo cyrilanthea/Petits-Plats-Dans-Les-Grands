@@ -1,0 +1,105 @@
+html {
+  background: url("images/resto.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} /* background image de la page*/
+
+
+/* -----  Propriétés du Header  ---- */
+header{
+  background-color:#E0B589;
+  text-align: center;
+  padding:56px;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+header h1{
+    color:#F5F5F5;
+}
+
+/* ---- Propriétés du Menu ----*/
+
+.menu{
+  display: block;
+  list-style:none;
+  background-color:#F2F5F5;
+  margin:0;
+  padding:4px;
+  width: 98.9%;
+  color:#808080;
+  text-align: center;
+}
+
+/* ---  Propriétés du Contenu (article) de la page ---- */
+article{
+  background-color:#F5F5F5;
+  padding: 85px;
+  background-clip: content-box;
+}
+
+article p{
+  color:#808080;
+  text-align: center;
+  padding: 10px;
+  text-align: justify;
+}
+.contenu{
+  display: flex;
+}
+div.contenu {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin:25px 25px 25px 25px;
+}
+
+.contenu button{
+  color:#F5F5F5;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.25);
+  font-size: 19px;
+  padding: 16px 90px;
+  border:none;
+  border-radius: 5px;
+  text-align: center;
+  background-color:#E0B589;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+button {
+  transition-duration: 0.2s;
+}
+
+button:hover {
+  background-color:#F5F5F5;
+  color: black;
+  border:2px solid #E0B589;
+}
+
+
+
+
+/* ----  Propriétés du Footer  ----- */
+
+footer{
+  bottom: 0;
+  background-color:black;
+  display:block;
+}
+
+.sections{
+  color: #808080;
+  padding: 20px;
+  text-decoration: underline;
+  display: flex;
+  justify-content: space-around;
+}
+
+.sections li{
+  list-style: none;
+}
+.sections p{
+ color: #808080;
+}

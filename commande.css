@@ -1,0 +1,179 @@
+html {
+  background: url("images/resto.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} /* background image de la page*/
+
+
+/* -----  Propriétés du Header  ---- */
+header{
+  background-color:#E0B589;
+  text-align: center;
+  padding:56px;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+header h1{
+    color:#F5F5F5;
+}
+
+/* ---- Propriétés du Menu ----*/
+
+.menu ul {
+  display: flex;
+  list-style:none;
+  background-color:#F2F5F5;
+  margin:0;
+  padding:7px;
+  width: 98.9%;
+}
+.menu li :hover:not(.active){
+  background-color:#E0B589;
+  color:black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.menu .active{
+  background-color:black;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+ .menu li{
+  flex-grow: 1;
+ }
+ .menu li a{
+  text-align: center;
+  display: block;
+  font-size:18px;
+  text-decoration: none;
+  color:#808080;
+ }
+
+/* ---  Propriétés du Contenu (article) de la page ---- */
+
+article h3{
+  color:#808080;
+  text-align: center;
+}
+
+article{
+  background-color:#F5F5F5;
+  padding: 85px;
+  background-clip: content-box;
+}
+.recettes{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.recettes button{
+  color:#F5F5F5;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.25);
+  font-size: 19px;
+  padding: 16px 90px;
+  border:none;
+  border-radius: 5px;
+  text-align: center;
+  background-color:#E0B589;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+button {
+  transition-duration: 0.2s;
+}
+
+button:hover {
+  background-color:#F5F5F5;
+  color: black;
+  border:2px solid #E0B589;
+}
+
+.recettes {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin:0px 25px 25px 25px;
+}
+
+.nom {
+  text-align: center;
+  padding: 20px 20px 20px 20px;
+}
+
+.nom h3{
+  color: black;
+}
+
+.horaires{
+  padding: 55px;
+}
+
+img {
+  float:left;
+  height: 300px;
+  width: 300px;
+  object-fit:cover;
+}
+
+/* ----  Propriétés du Footer  ----- */
+
+footer{
+  bottom: 0;
+  background-color:black;
+  display:block;
+}
+
+.sections{
+  color: #808080;
+  padding: 20px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.sections li{
+  list-style: none;
+
+}
+.sections p{
+ color: #808080;
+}
+
+/* ----- images responsives   ------ */
+@media only screen and (max-width: 700px) {
+.menu ul{
+  width:98.5%;
+}
+img {
+    float:left;
+    height: 150px;
+    width: 150px;
+    object-fit:cover;
+    margin: 6px 0;
+  }
+.recettes button{
+    font-size:12px;
+    width: 40px;
+    height: 20px;
+  }
+
+
+/*img {
+    width: 49.99999%;
+    margin: 6px 0;
+  }*/
+}
+
+@media only screen and (max-width: 500px) {
+/*img {
+    width: 100%;
+  }*/
+/*img {
+    float:left;
+    height: 20%;
+    width: 20;
+    object-fit:cover;
+  }*/
+}
